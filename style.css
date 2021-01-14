@@ -1,0 +1,24 @@
+body {
+    background: url('https://marketingweek.imgix.net/content/uploads/2015/11/02123420/Star_Wars_robot_featured.png') no-repeat center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.card-columns  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .card-columns {
+        display: block;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starwars API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+
+    <header class="text-center pt-5">
+        <a href="https::/swapi.co/">
+            <img src="https://fontmeme.com/permalink/210113/25d57f320ecb16fd5cf23fe3f3bf6cdd.png" alt="">
+        </a>
+    </header>
+    <!-- Buttons for selection -->
+    <div id="buttons" class="text-center mb-5">
+        <div class="btn-group btn-group-toggle pt-5" data-toggle="buttons">
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="films" autocomplete="off" value="films"> Films
+            </label>
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="people" autocomplete="off" value="people"> People
+            </label>
+            <label class="btn btn-lg btn-outline-light">
+                <input type="radio" name="options" id="vehicles" autocomplete="off" value="vehicles"> Vehicles
+            </label>
+        </div>
+    </div>
+
+    <div id="results" class="card-columns"></div>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
